@@ -8,7 +8,9 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import RoleSelection from "./pages/RoleSelection";
 import CandidateDashboard from "./pages/candidate/Dashboard";
+import CandidateProfile from "./pages/candidate/Profile";
 import CompanyDashboard from "./pages/company/Dashboard";
+import PostInternship from "./pages/company/PostInternship";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,7 +27,9 @@ const App = () => (
             <Route path="/auth" element={<Auth />} />
             <Route path="/role-selection" element={<RoleSelection />} />
             <Route path="/candidate/dashboard" element={<CandidateDashboard />} />
+            <Route path="/candidate/profile" element={<CandidateProfile />} />
             <Route path="/company/dashboard" element={<CompanyDashboard />} />
+            <Route path="/company/post-internship" element={<PostInternship />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
